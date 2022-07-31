@@ -1,7 +1,6 @@
 package serenitylabs.tutorials.vetclinic.model;
 
-import com.google.common.collect.ImmutableList;
-
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -22,6 +21,6 @@ public class WaitingList {
     }
 
     public Collection<Pet> getPets() {
-        return ImmutableList.copyOf(waitingList);
+        return new ArrayList<>(waitingList);
     }
 }
